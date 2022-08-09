@@ -3,7 +3,7 @@ RUN mkdir /app
 WORKDIR /app
 COPY . /app
 
-RUN pip3 install -r /app/requirements.txt --no-cache-dir
+RUN pip3 install -r api_yamdb/requirements.txt --no-cache-dir
 RUN pip install psycopg2-binary==2.9
 RUN python3 manage.py migrate
 RUN python3 manage.py makemigrations reviews
