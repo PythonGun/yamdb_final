@@ -96,8 +96,8 @@ docker-compose exec web python manage.py collectstatic --no-input
 ```
 #### 6.Заполнить базу тестовыми данными:
 ```
-docker cp dump.json infra-web-1:/app
-docker exec infra-web-1 python manage.py loaddata dump.json
+docker cp dump.json denisbarinov-web-1:/app
+docker exec denisbarinov-web-1 python manage.py loaddata dump.json
 ```
 
 #### 7.Проверьте доступность сервиса
