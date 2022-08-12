@@ -90,7 +90,6 @@ docker-compose up -d --build
 #### 5.Выполните миграции, создайте суперпользователя и перенесите статику:
 ```
 docker-compose exec web python manage.py migrate
-docker-compose exec web python manage.py makemigrations reviews
 docker-compose exec web python manage.py createsuperuser
 docker-compose exec web python manage.py collectstatic --no-input
 ```
